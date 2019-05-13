@@ -1,0 +1,68 @@
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>WELCOME</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>HARIOM KHURANA</p>
+            <!-- <li class="active">
+                <a  class="nav-link" routerLink="/graph" routerLinkActive="active" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">GRAPHS</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">LINE GRAPH </a>
+                    </li>
+                    <li>
+                        <a href="#">BAR GRAPH</a>
+                    </li>
+                    <li>
+                        <a href="#">PIE-CHART</a>
+                    </li>
+                </ul>
+            </li> -->
+            <li>
+              <a class ="nav-link" routerLink="/map" routerLinkActive="active" >MAP</a> 
+            </li>
+            <li>
+                <a href="#graphMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">GRAPH</a>
+                <ul class="collapse list-unstyled" id="graphMenu">
+                    <li>
+                        <a class ="nav-link" routerLink="/graph/line" routerLinkActive="active">LINE</a>
+                    </li>
+                    <li>
+                      <a class ="nav-link" routerLink="/graph/bar" routerLinkActive="active">BAR</a>
+                    </li>
+                    <li>
+                      <a class ="nav-link" routerLink="/graph/pie" routerLinkActive="active">PIE</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class ="nav-link" routerLink="/metabase" routerLinkActive="active" >ANGULAR MATERIAL</a> 
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
+     
+    </nav>
+ <!-- Page Content  -->
+</div>
+<button type="button" id="sidebarCollapse" class="btn btn-info">
+  <i class="fas fa-align-left"></i>
+  <span>Toggle Sidebar</span>
+</button>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+</script>
+
+
